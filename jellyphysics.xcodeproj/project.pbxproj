@@ -8,7 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F48F8418158B2A9600396884 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8417158B2A9600396884 /* main.cpp */; };
-		F48F841A158B2A9600396884 /* jellyphysics.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F48F8419158B2A9600396884 /* jellyphysics.1 */; };
+		F48F845C158B2B0F00396884 /* AABB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8445158B2B0F00396884 /* AABB.cpp */; };
+		F48F845D158B2B0F00396884 /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8448158B2B0F00396884 /* Body.cpp */; };
+		F48F845E158B2B0F00396884 /* ClosedShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F844A158B2B0F00396884 /* ClosedShape.cpp */; };
+		F48F845F158B2B0F00396884 /* InternalSpring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F844C158B2B0F00396884 /* InternalSpring.cpp */; };
+		F48F8460158B2B0F00396884 /* PointMass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8450158B2B0F00396884 /* PointMass.cpp */; };
+		F48F8461158B2B0F00396884 /* PressureBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8452158B2B0F00396884 /* PressureBody.cpp */; };
+		F48F8462158B2B0F00396884 /* SpringBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8454158B2B0F00396884 /* SpringBody.cpp */; };
+		F48F8463158B2B0F00396884 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8456158B2B0F00396884 /* Vector2.cpp */; };
+		F48F8464158B2B0F00396884 /* VectorTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F8458158B2B0F00396884 /* VectorTools.cpp */; };
+		F48F8465158B2B0F00396884 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48F845A158B2B0F00396884 /* World.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +27,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				F48F841A158B2A9600396884 /* jellyphysics.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -27,7 +35,29 @@
 /* Begin PBXFileReference section */
 		F48F8413158B2A9600396884 /* jellyphysics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jellyphysics; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48F8417158B2A9600396884 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		F48F8419158B2A9600396884 /* jellyphysics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jellyphysics.1; sourceTree = "<group>"; };
+		F48F8445158B2B0F00396884 /* AABB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AABB.cpp; sourceTree = "<group>"; };
+		F48F8446158B2B0F00396884 /* AABB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABB.h; sourceTree = "<group>"; };
+		F48F8447158B2B0F00396884 /* Bitmask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitmask.h; sourceTree = "<group>"; };
+		F48F8448158B2B0F00396884 /* Body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Body.cpp; sourceTree = "<group>"; };
+		F48F8449158B2B0F00396884 /* Body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Body.h; sourceTree = "<group>"; };
+		F48F844A158B2B0F00396884 /* ClosedShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClosedShape.cpp; sourceTree = "<group>"; };
+		F48F844B158B2B0F00396884 /* ClosedShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClosedShape.h; sourceTree = "<group>"; };
+		F48F844C158B2B0F00396884 /* InternalSpring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InternalSpring.cpp; sourceTree = "<group>"; };
+		F48F844D158B2B0F00396884 /* InternalSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalSpring.h; sourceTree = "<group>"; };
+		F48F844E158B2B0F00396884 /* JellyPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JellyPhysics.h; sourceTree = "<group>"; };
+		F48F844F158B2B0F00396884 /* JellyPrerequisites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JellyPrerequisites.h; sourceTree = "<group>"; };
+		F48F8450158B2B0F00396884 /* PointMass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointMass.cpp; sourceTree = "<group>"; };
+		F48F8451158B2B0F00396884 /* PointMass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointMass.h; sourceTree = "<group>"; };
+		F48F8452158B2B0F00396884 /* PressureBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PressureBody.cpp; sourceTree = "<group>"; };
+		F48F8453158B2B0F00396884 /* PressureBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PressureBody.h; sourceTree = "<group>"; };
+		F48F8454158B2B0F00396884 /* SpringBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpringBody.cpp; sourceTree = "<group>"; };
+		F48F8455158B2B0F00396884 /* SpringBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBody.h; sourceTree = "<group>"; };
+		F48F8456158B2B0F00396884 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		F48F8457158B2B0F00396884 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
+		F48F8458158B2B0F00396884 /* VectorTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorTools.cpp; sourceTree = "<group>"; };
+		F48F8459158B2B0F00396884 /* VectorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorTools.h; sourceTree = "<group>"; };
+		F48F845A158B2B0F00396884 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		F48F845B158B2B0F00396884 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +90,41 @@
 		F48F8416158B2A9600396884 /* jellyphysics */ = {
 			isa = PBXGroup;
 			children = (
+				F48F8420158B2AB500396884 /* JellyPhysics_CPP */,
 				F48F8417158B2A9600396884 /* main.cpp */,
-				F48F8419158B2A9600396884 /* jellyphysics.1 */,
 			);
 			path = jellyphysics;
+			sourceTree = "<group>";
+		};
+		F48F8420158B2AB500396884 /* JellyPhysics_CPP */ = {
+			isa = PBXGroup;
+			children = (
+				F48F8445158B2B0F00396884 /* AABB.cpp */,
+				F48F8446158B2B0F00396884 /* AABB.h */,
+				F48F8447158B2B0F00396884 /* Bitmask.h */,
+				F48F8448158B2B0F00396884 /* Body.cpp */,
+				F48F8449158B2B0F00396884 /* Body.h */,
+				F48F844A158B2B0F00396884 /* ClosedShape.cpp */,
+				F48F844B158B2B0F00396884 /* ClosedShape.h */,
+				F48F844C158B2B0F00396884 /* InternalSpring.cpp */,
+				F48F844D158B2B0F00396884 /* InternalSpring.h */,
+				F48F844E158B2B0F00396884 /* JellyPhysics.h */,
+				F48F844F158B2B0F00396884 /* JellyPrerequisites.h */,
+				F48F8450158B2B0F00396884 /* PointMass.cpp */,
+				F48F8451158B2B0F00396884 /* PointMass.h */,
+				F48F8452158B2B0F00396884 /* PressureBody.cpp */,
+				F48F8453158B2B0F00396884 /* PressureBody.h */,
+				F48F8454158B2B0F00396884 /* SpringBody.cpp */,
+				F48F8455158B2B0F00396884 /* SpringBody.h */,
+				F48F8456158B2B0F00396884 /* Vector2.cpp */,
+				F48F8457158B2B0F00396884 /* Vector2.h */,
+				F48F8458158B2B0F00396884 /* VectorTools.cpp */,
+				F48F8459158B2B0F00396884 /* VectorTools.h */,
+				F48F845A158B2B0F00396884 /* World.cpp */,
+				F48F845B158B2B0F00396884 /* World.h */,
+			);
+			name = JellyPhysics_CPP;
+			path = JellyPhysics_CPP/JellyPhysics_CPP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +178,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48F8418158B2A9600396884 /* main.cpp in Sources */,
+				F48F845C158B2B0F00396884 /* AABB.cpp in Sources */,
+				F48F845D158B2B0F00396884 /* Body.cpp in Sources */,
+				F48F845E158B2B0F00396884 /* ClosedShape.cpp in Sources */,
+				F48F845F158B2B0F00396884 /* InternalSpring.cpp in Sources */,
+				F48F8460158B2B0F00396884 /* PointMass.cpp in Sources */,
+				F48F8461158B2B0F00396884 /* PressureBody.cpp in Sources */,
+				F48F8462158B2B0F00396884 /* SpringBody.cpp in Sources */,
+				F48F8463158B2B0F00396884 /* Vector2.cpp in Sources */,
+				F48F8464158B2B0F00396884 /* VectorTools.cpp in Sources */,
+				F48F8465158B2B0F00396884 /* World.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
